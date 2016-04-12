@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>DRISK Project</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>UnivListServlet</servlet-name>
+    <servlet-class>com.action.UnivListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UnivListServlet</servlet-name>
+    <url-pattern>/UnivListServlet/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ControlServlet</servlet-name>
+    <servlet-class>com.action.ControlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlServlet</servlet-name>
+    <url-pattern>/controlServlet</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+   <servlet-name>UnivDataServlet</servlet-name>
+   <servlet-class>com.action.UnivDataServlet</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>UnivDataServlet</servlet-name>
+   <url-pattern>/UnivDataServlet/*</url-pattern>
+</servlet-mapping>
+
+  	<servlet>
+   <servlet-name>UnivDataCPIServlet</servlet-name>
+   <servlet-class>com.action.UnivDataCPIServlet</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>UnivDataCPIServlet</servlet-name>
+   <url-pattern>/UnivDataCPIServlet/*</url-pattern>
+</servlet-mapping>
+
+
+  	<servlet>
+   <servlet-name>UnivOffCrimeServlet</servlet-name>
+   <servlet-class>com.action.UnivOffCrimeServlet</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>UnivOffCrimeServlet</servlet-name>
+   <url-pattern>/UnivOffCrimeServlet/*</url-pattern>
+</servlet-mapping>
+
+  	<servlet>
+   <servlet-name>UnivOnCrimeServlet</servlet-name>
+   <servlet-class>com.action.UnivOnCrimeServlet</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>UnivOnCrimeServlet</servlet-name>
+   <url-pattern>/UnivOnCrimeServlet/*</url-pattern>
+</servlet-mapping>
+	
+</web-app>
